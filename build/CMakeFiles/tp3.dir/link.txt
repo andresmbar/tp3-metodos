@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -O3 -O3 -DNDEBUG  -rdynamic CMakeFiles/tp3.dir/src/main.cpp.o CMakeFiles/tp3.dir/src/lsq.cpp.o  -o tp3 

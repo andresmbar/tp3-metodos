@@ -4,8 +4,9 @@
 // https://stackoverflow.com/questions/47762543/segfault-when-using-pybind11-wrappers-in-c
 
 #include <iostream>
-#include "pca.h"
-#include "eigen.h"
+
+#pragma once
+#include "types.h"
 
 #include <pybind11/embed.h>
 

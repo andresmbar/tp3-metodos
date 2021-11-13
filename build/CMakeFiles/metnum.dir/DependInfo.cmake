@@ -4,11 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/eigen.cpp" "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir/src/eigen.cpp.o"
-  "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/knn.cpp" "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir/src/knn.cpp.o"
-  "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/lsq.cpp" "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir/src/lsq.cpp.o"
-  "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/metnum.cpp" "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir/src/metnum.cpp.o"
-  "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/pca.cpp" "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir/src/pca.cpp.o"
+  "/home/oscar/Documents/MetNum/tp3/tp3-metodos/src/lsq.cpp" "/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles/metnum.dir/src/lsq.cpp.o"
+  "/home/oscar/Documents/MetNum/tp3/tp3-metodos/src/metnum.cpp" "/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles/metnum.dir/src/metnum.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

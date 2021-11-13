@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(tp2)
+project(tp3)
 
 set (CMAKE_CXX_STANDARD 11)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
@@ -31,9 +31,6 @@ add_subdirectory(pybind11)
 
 pybind11_add_module(metnum
                     src/metnum.cpp
-                    src/knn.cpp
-                    src/pca.cpp
-                    src/eigen.cpp
                     src/lsq.cpp)
 
 # Por cada módulo que use OpenMP ponerlo como dependencia de esta forma
@@ -49,11 +46,8 @@ message(CMAKE_INSTALL_PREFIX = "${CMAKE_INSTALL_PREFIX}")
 install(TARGETS metnum DESTINATION ${CMAKE_INSTALL_PREFIX}/notebooks)
 
 # Crear un binario para testing manteniendo las dependencias de python por separado
-add_executable(tp2
+add_executable(tp3
         src/main.cpp
-        src/knn.cpp
-        src/pca.cpp
-        src/eigen.cpp
         src/lsq.cpp)
 
 

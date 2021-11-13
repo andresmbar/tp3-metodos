@@ -1,8 +1,8 @@
-# Install script for directory: /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/pybind11
+# Install script for directory: /home/oscar/Documents/MetNum/tp3/tp3-metodos/pybind11
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2")
+  set(CMAKE_INSTALL_PREFIX "/home/oscar/Documents/MetNum/tp3/tp3-metodos")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
