@@ -1,0 +1,14 @@
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/install/local.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/install.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/list_install_components.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/rebuild_cache.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/edit_cache.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/install/strip.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/tp2.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/CMakeFiles/install.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/CMakeFiles/list_install_components.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/CMakeFiles/rebuild_cache.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/CMakeFiles/edit_cache.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/CMakeFiles/install/strip.dir
+/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/CMakeFiles/install/local.dir

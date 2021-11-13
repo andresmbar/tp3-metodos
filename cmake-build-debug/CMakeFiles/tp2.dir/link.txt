@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -g3 -O0 -g -rdynamic CMakeFiles/tp2.dir/src/main.cpp.o CMakeFiles/tp2.dir/src/knn.cpp.o CMakeFiles/tp2.dir/src/pca.cpp.o CMakeFiles/tp2.dir/src/eigen.cpp.o CMakeFiles/tp2.dir/src/lsq.cpp.o -o tp2 
