@@ -1,0 +1,7 @@
+/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2
+Debug mode
+-- pybind11 v2.2.4
+CMAKE_INSTALL_PREFIX=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/cmake-build-debug
