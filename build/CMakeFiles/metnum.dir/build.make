@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2
+CMAKE_SOURCE_DIR = /home/oscar/Documents/MetNum/tp3/tp3-metodos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build
+CMAKE_BINARY_DIR = /home/oscar/Documents/MetNum/tp3/tp3-metodos/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/metnum.dir/depend.make
@@ -59,90 +59,45 @@ include CMakeFiles/metnum.dir/flags.make
 
 CMakeFiles/metnum.dir/src/metnum.cpp.o: CMakeFiles/metnum.dir/flags.make
 CMakeFiles/metnum.dir/src/metnum.cpp.o: ../src/metnum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/metnum.dir/src/metnum.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/metnum.cpp.o -c /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/metnum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/metnum.dir/src/metnum.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/metnum.cpp.o -c /home/oscar/Documents/MetNum/tp3/tp3-metodos/src/metnum.cpp
 
 CMakeFiles/metnum.dir/src/metnum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/metnum.dir/src/metnum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/metnum.cpp > CMakeFiles/metnum.dir/src/metnum.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp3/tp3-metodos/src/metnum.cpp > CMakeFiles/metnum.dir/src/metnum.cpp.i
 
 CMakeFiles/metnum.dir/src/metnum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/metnum.dir/src/metnum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/metnum.cpp -o CMakeFiles/metnum.dir/src/metnum.cpp.s
-
-CMakeFiles/metnum.dir/src/knn.cpp.o: CMakeFiles/metnum.dir/flags.make
-CMakeFiles/metnum.dir/src/knn.cpp.o: ../src/knn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/metnum.dir/src/knn.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/knn.cpp.o -c /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/knn.cpp
-
-CMakeFiles/metnum.dir/src/knn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/metnum.dir/src/knn.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/knn.cpp > CMakeFiles/metnum.dir/src/knn.cpp.i
-
-CMakeFiles/metnum.dir/src/knn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/metnum.dir/src/knn.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/knn.cpp -o CMakeFiles/metnum.dir/src/knn.cpp.s
-
-CMakeFiles/metnum.dir/src/pca.cpp.o: CMakeFiles/metnum.dir/flags.make
-CMakeFiles/metnum.dir/src/pca.cpp.o: ../src/pca.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/metnum.dir/src/pca.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/pca.cpp.o -c /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/pca.cpp
-
-CMakeFiles/metnum.dir/src/pca.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/metnum.dir/src/pca.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/pca.cpp > CMakeFiles/metnum.dir/src/pca.cpp.i
-
-CMakeFiles/metnum.dir/src/pca.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/metnum.dir/src/pca.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/pca.cpp -o CMakeFiles/metnum.dir/src/pca.cpp.s
-
-CMakeFiles/metnum.dir/src/eigen.cpp.o: CMakeFiles/metnum.dir/flags.make
-CMakeFiles/metnum.dir/src/eigen.cpp.o: ../src/eigen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/metnum.dir/src/eigen.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/eigen.cpp.o -c /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/eigen.cpp
-
-CMakeFiles/metnum.dir/src/eigen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/metnum.dir/src/eigen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/eigen.cpp > CMakeFiles/metnum.dir/src/eigen.cpp.i
-
-CMakeFiles/metnum.dir/src/eigen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/metnum.dir/src/eigen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/eigen.cpp -o CMakeFiles/metnum.dir/src/eigen.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp3/tp3-metodos/src/metnum.cpp -o CMakeFiles/metnum.dir/src/metnum.cpp.s
 
 CMakeFiles/metnum.dir/src/lsq.cpp.o: CMakeFiles/metnum.dir/flags.make
 CMakeFiles/metnum.dir/src/lsq.cpp.o: ../src/lsq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/metnum.dir/src/lsq.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/lsq.cpp.o -c /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/lsq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/metnum.dir/src/lsq.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/metnum.dir/src/lsq.cpp.o -c /home/oscar/Documents/MetNum/tp3/tp3-metodos/src/lsq.cpp
 
 CMakeFiles/metnum.dir/src/lsq.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/metnum.dir/src/lsq.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/lsq.cpp > CMakeFiles/metnum.dir/src/lsq.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Documents/MetNum/tp3/tp3-metodos/src/lsq.cpp > CMakeFiles/metnum.dir/src/lsq.cpp.i
 
 CMakeFiles/metnum.dir/src/lsq.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/metnum.dir/src/lsq.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/src/lsq.cpp -o CMakeFiles/metnum.dir/src/lsq.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Documents/MetNum/tp3/tp3-metodos/src/lsq.cpp -o CMakeFiles/metnum.dir/src/lsq.cpp.s
 
 # Object files for target metnum
 metnum_OBJECTS = \
 "CMakeFiles/metnum.dir/src/metnum.cpp.o" \
-"CMakeFiles/metnum.dir/src/knn.cpp.o" \
-"CMakeFiles/metnum.dir/src/pca.cpp.o" \
-"CMakeFiles/metnum.dir/src/eigen.cpp.o" \
 "CMakeFiles/metnum.dir/src/lsq.cpp.o"
 
 # External object files for target metnum
 metnum_EXTERNAL_OBJECTS =
 
 metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/src/metnum.cpp.o
-metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/src/knn.cpp.o
-metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/src/pca.cpp.o
-metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/src/eigen.cpp.o
 metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/src/lsq.cpp.o
 metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/build.make
 metnum.cpython-36m-x86_64-linux-gnu.so: CMakeFiles/metnum.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared module metnum.cpython-36m-x86_64-linux-gnu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module metnum.cpython-36m-x86_64-linux-gnu.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/metnum.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/strip /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/metnum.cpython-36m-x86_64-linux-gnu.so
+	/usr/bin/strip /home/oscar/Documents/MetNum/tp3/tp3-metodos/build/metnum.cpython-36m-x86_64-linux-gnu.so
 
 # Rule to build all files generated by this target.
 CMakeFiles/metnum.dir/build: metnum.cpython-36m-x86_64-linux-gnu.so
@@ -154,6 +109,6 @@ CMakeFiles/metnum.dir/clean:
 .PHONY : CMakeFiles/metnum.dir/clean
 
 CMakeFiles/metnum.dir/depend:
-	cd /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2 /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2 /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/metnum.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oscar/Documents/MetNum/tp3/tp3-metodos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Documents/MetNum/tp3/tp3-metodos /home/oscar/Documents/MetNum/tp3/tp3-metodos /home/oscar/Documents/MetNum/tp3/tp3-metodos/build /home/oscar/Documents/MetNum/tp3/tp3-metodos/build /home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles/metnum.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/metnum.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -O3 -O3 -DNDEBUG -fPIC -fvisibility=hidden   -flto -fno-fat-l
 
 CXX_DEFINES = -Dmetnum_EXPORTS
 
-CXX_INCLUDES = -I/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/eigen -I/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/pybind11/include -I/home/oscar/anaconda3/envs/tp2/include/python3.6m 
+CXX_INCLUDES = -I/home/oscar/Documents/MetNum/tp3/tp3-metodos/eigen -I/home/oscar/Documents/MetNum/tp3/tp3-metodos/pybind11/include -I/home/oscar/anaconda3/envs/tp2/include/python3.6m 
 

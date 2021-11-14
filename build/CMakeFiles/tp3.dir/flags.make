@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -O3 -O3 -DNDEBUG   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/eigen 
+CXX_INCLUDES = -I/home/oscar/Documents/MetNum/tp3/tp3-metodos/eigen 
 

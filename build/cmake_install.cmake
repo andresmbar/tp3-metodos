@@ -1,8 +1,8 @@
-# Install script for directory: /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2
+# Install script for directory: /home/oscar/Documents/MetNum/tp3/tp3-metodos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2")
+  set(CMAKE_INSTALL_PREFIX "/home/oscar/Documents/MetNum/tp3/tp3-metodos")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,32 +38,32 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
+  if(EXISTS "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so"
+         FILE "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
+   "/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks" TYPE MODULE FILES "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/metnum.cpython-36m-x86_64-linux-gnu.so")
-  if(EXISTS "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
+file(INSTALL DESTINATION "/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks" TYPE MODULE FILES "/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/metnum.cpython-36m-x86_64-linux-gnu.so")
+  if(EXISTS "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/oscar/Documents/MetNum/tp3/tp3-metodos/notebooks/metnum.cpython-36m-x86_64-linux-gnu.so")
     endif()
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/pybind11/cmake_install.cmake")
+  include("/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/pybind11/cmake_install.cmake")
 
 endif()
 
@@ -75,5 +75,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/oscar/Documents/MetNum/tp3/tp3-metodos/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

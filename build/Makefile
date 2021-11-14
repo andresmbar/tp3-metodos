@@ -48,13 +48,25 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2
+CMAKE_SOURCE_DIR = /home/oscar/Documents/MetNum/tp3/tp3-metodos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build
+CMAKE_BINARY_DIR = /home/oscar/Documents/MetNum/tp3/tp3-metodos/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -67,6 +79,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -101,34 +124,11 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles /home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Documents/MetNum/tp2/tp2-metodos/tp2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Documents/MetNum/tp3/tp3-metodos/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tp2
+# Target rules for targets named tp3
 
 # Build rule for target.
-tp2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tp2
-.PHONY : tp2
+tp3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tp3
+.PHONY : tp3
 
 # fast build rule for target.
-tp2/fast:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/build
-.PHONY : tp2/fast
+tp3/fast:
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/build
+.PHONY : tp3/fast
 
 #=============================================================================
 # Target rules for targets named metnum
@@ -182,73 +182,13 @@ metnum/fast:
 	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/build
 .PHONY : metnum/fast
 
-src/eigen.o: src/eigen.cpp.o
-
-.PHONY : src/eigen.o
-
-# target to build an object file
-src/eigen.cpp.o:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/eigen.cpp.o
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/eigen.cpp.o
-.PHONY : src/eigen.cpp.o
-
-src/eigen.i: src/eigen.cpp.i
-
-.PHONY : src/eigen.i
-
-# target to preprocess a source file
-src/eigen.cpp.i:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/eigen.cpp.i
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/eigen.cpp.i
-.PHONY : src/eigen.cpp.i
-
-src/eigen.s: src/eigen.cpp.s
-
-.PHONY : src/eigen.s
-
-# target to generate assembly for a file
-src/eigen.cpp.s:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/eigen.cpp.s
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/eigen.cpp.s
-.PHONY : src/eigen.cpp.s
-
-src/knn.o: src/knn.cpp.o
-
-.PHONY : src/knn.o
-
-# target to build an object file
-src/knn.cpp.o:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/knn.cpp.o
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/knn.cpp.o
-.PHONY : src/knn.cpp.o
-
-src/knn.i: src/knn.cpp.i
-
-.PHONY : src/knn.i
-
-# target to preprocess a source file
-src/knn.cpp.i:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/knn.cpp.i
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/knn.cpp.i
-.PHONY : src/knn.cpp.i
-
-src/knn.s: src/knn.cpp.s
-
-.PHONY : src/knn.s
-
-# target to generate assembly for a file
-src/knn.cpp.s:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/knn.cpp.s
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/knn.cpp.s
-.PHONY : src/knn.cpp.s
-
 src/lsq.o: src/lsq.cpp.o
 
 .PHONY : src/lsq.o
 
 # target to build an object file
 src/lsq.cpp.o:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/lsq.cpp.o
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/src/lsq.cpp.o
 	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/lsq.cpp.o
 .PHONY : src/lsq.cpp.o
 
@@ -258,7 +198,7 @@ src/lsq.i: src/lsq.cpp.i
 
 # target to preprocess a source file
 src/lsq.cpp.i:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/lsq.cpp.i
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/src/lsq.cpp.i
 	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/lsq.cpp.i
 .PHONY : src/lsq.cpp.i
 
@@ -268,7 +208,7 @@ src/lsq.s: src/lsq.cpp.s
 
 # target to generate assembly for a file
 src/lsq.cpp.s:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/lsq.cpp.s
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/src/lsq.cpp.s
 	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/lsq.cpp.s
 .PHONY : src/lsq.cpp.s
 
@@ -278,7 +218,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -287,7 +227,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -296,7 +236,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/metnum.o: src/metnum.cpp.o
@@ -326,56 +266,20 @@ src/metnum.cpp.s:
 	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/metnum.cpp.s
 .PHONY : src/metnum.cpp.s
 
-src/pca.o: src/pca.cpp.o
-
-.PHONY : src/pca.o
-
-# target to build an object file
-src/pca.cpp.o:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/pca.cpp.o
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/pca.cpp.o
-.PHONY : src/pca.cpp.o
-
-src/pca.i: src/pca.cpp.i
-
-.PHONY : src/pca.i
-
-# target to preprocess a source file
-src/pca.cpp.i:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/pca.cpp.i
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/pca.cpp.i
-.PHONY : src/pca.cpp.i
-
-src/pca.s: src/pca.cpp.s
-
-.PHONY : src/pca.s
-
-# target to generate assembly for a file
-src/pca.cpp.s:
-	$(MAKE) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/src/pca.cpp.s
-	$(MAKE) -f CMakeFiles/metnum.dir/build.make CMakeFiles/metnum.dir/src/pca.cpp.s
-.PHONY : src/pca.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... tp2"
+	@echo "... tp3"
 	@echo "... metnum"
-	@echo "... src/eigen.o"
-	@echo "... src/eigen.i"
-	@echo "... src/eigen.s"
-	@echo "... src/knn.o"
-	@echo "... src/knn.i"
-	@echo "... src/knn.s"
 	@echo "... src/lsq.o"
 	@echo "... src/lsq.i"
 	@echo "... src/lsq.s"
@@ -385,9 +289,6 @@ help:
 	@echo "... src/metnum.o"
 	@echo "... src/metnum.i"
 	@echo "... src/metnum.s"
-	@echo "... src/pca.o"
-	@echo "... src/pca.i"
-	@echo "... src/pca.s"
 .PHONY : help
 
 

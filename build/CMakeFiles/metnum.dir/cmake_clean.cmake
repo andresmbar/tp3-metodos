@@ -1,9 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/metnum.dir/src/eigen.cpp.o"
-  "CMakeFiles/metnum.dir/src/knn.cpp.o"
   "CMakeFiles/metnum.dir/src/lsq.cpp.o"
   "CMakeFiles/metnum.dir/src/metnum.cpp.o"
-  "CMakeFiles/metnum.dir/src/pca.cpp.o"
   "metnum.cpython-36m-x86_64-linux-gnu.so"
   "metnum.pdb"
 )
